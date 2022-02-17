@@ -1,0 +1,44 @@
+.works{
+    padding-top: 0;
+}
+.title-two{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--tittle-text-color);
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.works-examples{
+    display: flex;
+}
+.works-examples__item:not(:first-child){
+    margin-left: var(--card-set-gap); 
+}
+.works-examples__bkg{
+    position: relative;
+}
+
+
+.works-examples__bkg > .works-examples__text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(47, 48, 58, 0.8);
+    
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.875;
+    letter-spacing: 0.03em;
+}
