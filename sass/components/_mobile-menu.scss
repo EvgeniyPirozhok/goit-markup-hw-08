@@ -1,0 +1,16 @@
+.mob-menu_open {
+  border: transparent;
+  background-color: transparent;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  transition-property: fill;
+  
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+  @include tab {
+    display: none;
+  }
+}
