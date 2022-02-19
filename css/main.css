@@ -284,6 +284,10 @@ body {
   display: block;
 }
 
+.menu-open-btn:hover, .menu-open-btn:focus {
+  fill: var(--accent-color);
+}
+
 .menu-open-btn__icon {
   color: var(--accent-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
