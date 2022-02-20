@@ -1,17 +1,37 @@
+// .clients-section{
+//     @include tab {
+
+//     }
+// }
 .clients{
+    @include desk{
     display: flex;
     justify-content: center;
+    }
+    
+    
 }
-.clients li:not(:first-child){
-    margin-left: 30px;
-}
+// .clients__item{
+//     @include tab {
+//     width: calc(100% / 3 - 30px);
+//     margin-left: 30px;
+//   }
+//   @include desk {
+//     width: calc(100% / 4 - 30px);
+//     margin-left: 30px;
+//     &:not(:first-child){
+//     margin-left: var(--card-set-gap);
+// }
+//   }
+// }
+// .clients__item:not(:first-child){
+//     margin-left: 30px;
+// }
 .clients__icon{
     fill: currentColor;
 }
 .clients__link{
     display: flex;
-    width: 170px;
-    height: 92px;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--icon-color);

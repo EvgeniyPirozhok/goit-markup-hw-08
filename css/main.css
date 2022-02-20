@@ -728,7 +728,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--tittle-text-color);
-  margin-top: var(--card-set-gap);
   margin-bottom: 10px;
 }
 
@@ -739,6 +738,11 @@ body {
 }
 
 .employee__card {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #FFFFFF;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -759,6 +763,17 @@ body {
   }
 }
 
+.employee__card-content {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .employee__card-content {
+    padding-bottom: 30px;
+  }
+}
+
 .network {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,7 +781,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: var(--card-set-gap);
 }
 
 .network__link {
@@ -800,17 +814,15 @@ body {
   fill: currentColor;
 }
 
-.clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.clients li:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .clients__icon {
@@ -821,8 +833,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
-  height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

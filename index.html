@@ -264,13 +264,21 @@
             <li class="employee__card">
               <picture>
                 <source
-                    srcset="./images/igor-demianenko-1x.jpg 1x, ./images/igor-demianenko-2x.jpg.jpg 2x"
+                    srcset="./images/igor-demianenko-1x.jpg 1x, ./images/igor-demianenko-2x.jpg 2x"
                     media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="./images/igor-demianenko-tablet-1x.jpg 1x, ./images/igor-demianenko-tablet-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/igor-demianenko-mobile-1x.jpg 1x, ./images/igor-demianenko-mobile-2x.jpg 2x"
+                    media="(min-width:320px)"
                   />
                 <img src="./images/igor-demianenko-1x.jpg" alt="Игорь Демьяненко" />
               </picture>
               
-            <div class="employee__card-text">
+            <div class="employee__card-content">
               <h3 class="employee__name">Игорь Демьяненко</h3>
               <p class="employee__profession">Product Designer</p>
 
@@ -308,10 +316,25 @@
             </li>
 
             <li class="employee__card">
-              <img src="./images/olgarepina.jpg" alt="Ольга Репина" />
-              <h3 class="employee__name">Ольга Репина</h3>
-              <p class="employee__profession">Frontend Developer</p>
-              <div>
+              <picture>
+                <source
+                    srcset="./images/olgarepina.jpg 1x, ./images/olgarepina-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="./images/olgarepina-tablet-1x.jpg 1x, ./images/olgarepina-tablet-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/olgarepina-mobile-1x.jpg 1x, ./images/olgarepina-mobile-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                <img src="./images/olgarepina.jpg" alt="Ольга Репина" />
+              </picture>
+              
+              <div class="employee__card-content">
+                <h3 class="employee__name">Ольга Репина</h3>
+                <p class="employee__profession">Frontend Developer</p>
                 <ul class="list network">
                   <li class="network__list">
                     <a class="network__link" href="/">
@@ -345,8 +368,23 @@
               </div>
             </li>
             <li class="employee__card">
-              <img src="./images/nikolaitarasov.jpg" alt="НиколайТарасов" />
-              <h3 class="employee__name">НиколайТарасов</h3>
+              <picture>
+                <source
+                    srcset="./images/nikolaitarasov.jpg 1x, ./images/nikolaitarasov-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="./images/nikolaitarasov-tablet-1x.jpg 1x, ./images/nikolaitarasov-tablet-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/nikolaitarasov-mobile-1x.jpg 1x, ./images/nikolaitarasov-mobile-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                <img src="./images/nikolaitarasov.jpg" alt="НиколайТарасов" />
+              </picture>
+              <div class="employee__card-content">
+                <h3 class="employee__name">НиколайТарасов</h3>
               <p class="employee__profession">Marketing</p>
               <div>
                 <ul class="list network">
@@ -380,12 +418,30 @@
                   </li>
                 </ul>
               </div>
+              
+              </div>
             </li>
             <li class="employee__card">
-              <img src="./images/mihailermakov.jpg" alt="МихаилЕрмаков" />
-              <h3 class="employee__name">МихаилЕрмаков</h3>
+              <picture>
+                <source
+                    srcset="./images/mihailermakov.jpg 1x, ./images/mihailermakov-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="./images/mihailermakov-tablet-1x.jpg 1x, ./images/mihailermakov-tablet-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/mihailermakov-mobile-1x.jpg 1x, ./images/mihailermakov-mobile-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                <img src="./images/mihailermakov.jpg" alt="МихаилЕрмаков" />
+              </picture>
+              
+              
+              <div class="employee__card-content">
+                <h3 class="employee__name">МихаилЕрмаков</h3>
               <p class="employee__profession">UI Designer</p>
-              <div>
                 <ul class="list network">
                   <li class="network__list">
                     <a class="network__link" href="/">
@@ -422,46 +478,46 @@
         </div>
       </section>
       <!--постоянные клиенты-->
-      <section class="section">
+      <section class="clients-section section">
         <div>
           <h2 class="title-two">Постоянные клиенты</h2>
           <ul class="clients list">
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="/">
                 <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="/">
                 <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="/">
                 <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="/">
                 <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="/">
                 <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="/">
                 <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-client6"></use>

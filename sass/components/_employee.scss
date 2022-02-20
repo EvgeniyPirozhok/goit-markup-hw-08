@@ -22,8 +22,8 @@
     font-size: 16px;
     line-height: 1.19;
     color: var(--tittle-text-color);
-    margin-top: var(--card-set-gap);
     margin-bottom: 10px;
+    
 }
 .employee__profession{
     font-size: 16px;
@@ -32,7 +32,11 @@
 }
 
 .employee__card{
-  margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
   @include tab {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -45,20 +49,19 @@
 }
   }
 }
+.employee__card-content{
+    padding-top: 30px;
+    padding-bottom: 24px;
+    @include desk {
+    padding-bottom: 30px;
+    }
+}
 
-
-
-// {
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     width: 270px;
-//     background: #FFFFFF;
-//     text-align: center;
-// }
 .network{
     display: flex;
     justify-content: center;
-    margin-bottom: var(--card-set-gap);}
+    // margin-bottom: var(--card-set-gap);
+}
 .network__link{
     color: var(--icon-color);
     display: flex;
