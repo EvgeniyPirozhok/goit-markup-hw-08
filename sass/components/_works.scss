@@ -1,5 +1,9 @@
 .works{
+    display: none;
     padding-top: 0;
+    @include desk {
+        display: block;
+    }
 }
 .title-two{
     font-weight: bold;

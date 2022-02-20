@@ -1,9 +1,21 @@
 .employee{
-    background-color: var(--background-light-grey);
+  background-color: var(--background-light-grey);
 }
+
 .employee__list{
+  margin-bottom: -30px;
+  @include tab {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @include desk {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
+
 
 .employee__name{
     font-weight: 500;
@@ -18,16 +30,31 @@
     line-height: 1.19;
     margin-bottom: 16px;
 }
-.employee__card:not(:first-child){
+
+.employee__card{
+  margin-bottom: 30px;
+  @include tab {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @include desk {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    &:not(:first-child){
     margin-left: var(--card-set-gap);
 }
-.employee__card{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    background: #FFFFFF;
-    text-align: center;
+  }
 }
+
+
+
+// {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     width: 270px;
+//     background: #FFFFFF;
+//     text-align: center;
+// }
 .network{
     display: flex;
     justify-content: center;
