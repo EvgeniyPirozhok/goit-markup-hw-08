@@ -1,24 +1,55 @@
 .hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: var(--background-grey);
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header-img-1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header-img-2x.jpg')
+      }
+
+   @include tab {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header-tab-1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header-tab-2x.jpg')
+   }
+   @include desk {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
     background-image: 
    linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
    url('../images/img-hero.jpg');
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/img-hero-2x.jpg')
+   }
+   
 }
 .hero__title{
-    margin-bottom: var(--card-set-gap);
+    font-size: 26px;
     font-weight: 900;
-    font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-bottom: var(--card-set-gap);
+    max-width: 360px;
+    @include desk {
+    font-size: 44px;
+    line-height: 1.61;
+    max-width: 696px;
+    }
+    
 }
 .hero__btn{
     min-width: 200px;
