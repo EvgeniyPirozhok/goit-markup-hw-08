@@ -19,18 +19,16 @@
     <!--шапка сайта-->
     <header class="header">
       <div class="container header__container">
+        <a class="header__logo" href="./index.html"
+          ><span class="header__logo-1">Web</span>Studio
+        </a>
         <nav class="header__nav">
-          <a class="header__logo" href="./index.html"
-            ><span class="header__logo-1">Web</span>Studio
-          </a>
           <ul class="site-nav list">
             <li class="site-nav__items">
-              <a class="site-nav__link" href="./index.html">Студия</a>
+              <a class="site-nav__link " href="./index.html">Студия</a>
             </li>
             <li class="site-nav__items">
-              <a class="site-nav__link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="site-nav__link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav__items">
               <a class="site-nav__link" href="">Контакты</a>
@@ -55,6 +53,99 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn is-open" aria-expanded="false" data-menu-button>
+          <svg width="24px" height="16px" class="menu-open-btn__icon menu-icon__open" aria-label="Переключатель мобильного меню">
+            
+            <use href="./images/icons.svg#icon-menu_24px" class=""></use>
+          </svg>
+          <svg width="18.67px" height="18.67px" class="menu-icon__close" >
+            <use href="./images/icons.svg#icon-vector" class=""></use>
+            
+          </svg>
+        </button>
+        <div class="container-menu" data-menu>
+          <div class=container-menu_top>
+            <ul class="list">
+              <li class="container-menu_item">
+                <a href="./index.html" class="container-menu_link "
+                  >Студия</a
+                >
+              </li>
+              <li class="container-menu_item">
+                <a href="./portfolio.html" class="container-menu_link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="container-menu_item">
+                <a href="" class="container-menu_link">Контакты</a>
+              </li>
+            </ul>
+          </div> 
+          <div class="container-menu_bottom">
+            <ul class="container-menu_call list">
+              <li class="container-menu_tel">+38 096 111 11 11</li>
+              <li class="container-menu_mail">info@devstudio.com</li>
+            </ul>
+            <ul class="menu-social-list list">
+              <li class="menu-social-list__item">
+                <a
+                  href=""
+                  class="menu-social-list__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-social-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="menu-social-list__link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-social-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="menu-social-list__link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-social-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="menu-social-list__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div> 
+      
+        </div>
+      </div>
+        
+            <!-- <ul class="list">
+              <li class="mob-menu_nav-list">
+                <a class="mob-menu_nav-link current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu_nav-list">
+                <a class="mob-menu_nav-link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu_nav-list">
+                <a class="mob-menu_nav-link" href="">Контакты</a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -63,15 +154,15 @@
         <div class="container">
           <h1 class="hidden-header">Фильтр</h1>
           <ul class="filter list">
-            <li><button class="filter__link" type="button">Все</button></li>
-            <li>
+            <li class="filter__item"><button class="filter__link" type="button">Все</button></li>
+            <li class="filter__item">
               <button class="filter__link" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__link" type="button">Приложения</button>
             </li>
-            <li><button class="filter__link" type="button">Дизайн</button></li>
-            <li>
+            <li class="filter__item"><button class="filter__link" type="button">Дизайн</button></li>
+            <li class="filter__item">
               <button class="filter__link" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -243,7 +334,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__container-adress">
           <a class="footer__logo" href="./index.html"
             ><span class="footer__logo-web">Web</span>Studio</a
           >
@@ -303,7 +394,7 @@
           </ul>
         </div>
         <form action="#" class="subscription">
-          <label class="footer__header" for="subscription"
+          <label class="subscription__header" for="subscription"
             >Подпишитесь на рассылку</label
           >
           <div class="subscription__form">
@@ -324,5 +415,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

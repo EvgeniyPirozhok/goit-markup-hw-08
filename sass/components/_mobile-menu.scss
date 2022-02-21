@@ -43,9 +43,7 @@
     color: var(--accent-color);
 }
 }
-// .menu-close-btn_icon{
 
-// }
 .container-menu {
     display: none;
     position: absolute;
@@ -89,6 +87,9 @@ margin-bottom: 32px;
     &:focus {
     color: var(--accent-color);
   }
+}
+.container-menu_link.current{
+    color: var(--accent-color);
 }
 
 .container-menu_bottom{
