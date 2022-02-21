@@ -827,7 +827,7 @@ body {
 }
 
 .footer__header {
-  display: flex;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -838,9 +838,15 @@ body {
   color: var(--white-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer__header {
+    text-align: start;
+  }
+}
 
 .join__list {
   display: flex;
+  justify-content: center;
 }
 
 .join__icon {

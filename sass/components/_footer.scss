@@ -78,7 +78,7 @@ text-align: center;
     
 }
 .footer__header{
-    display: flex;
+    text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -88,9 +88,13 @@ text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 20px;
+    @include tab {
+    text-align: start;
+    }
 }
 .join__list{
     display: flex;
+    justify-content: center;
 }
 .join__icon{
     fill: currentColor;
