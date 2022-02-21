@@ -885,6 +885,19 @@ body {
   }
 }
 
+.subscription__header {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .subscription__input {
   height: 50px;
   width: 450px;
