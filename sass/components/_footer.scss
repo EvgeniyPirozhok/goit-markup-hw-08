@@ -5,15 +5,23 @@
     
 }
 .footer__container{
-    display: block;
     align-items: center;
     justify-content: center;
+    @include tab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
     @include desk {
     display: flex;
-    justify-content: flex-start;
     align-items: baseline;
     }
-    
+}
+.footer__container-adress{
+text-align: center;
+@include desk {
+    text-align: start;
+}
 }
 .footer__logo{
     font-family: Raleway;
@@ -62,7 +70,12 @@
 }
 
 .join{
+    margin-left: auto;
+    margin-right: auto;
+    @include desk{
     margin-left: 70px;
+    }
+    
 }
 .footer__header{
     display: flex;

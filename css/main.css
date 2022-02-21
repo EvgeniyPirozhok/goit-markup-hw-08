@@ -743,15 +743,29 @@ body {
 }
 
 .footer__container {
-  display: block;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    justify-content: flex-start;
     align-items: baseline;
+  }
+}
+
+.footer__container-adress {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container-adress {
+    text-align: start;
   }
 }
 
@@ -803,7 +817,13 @@ body {
 }
 
 .join {
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
 }
 
 .footer__header {
