@@ -814,14 +814,51 @@ body {
   fill: currentColor;
 }
 
+.clients {
+  margin-bottom: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.clients-section-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--card-set-gap);
+  color: var(--tittle-text-color);
+}
+
 @media screen and (min-width: 1200px) {
-  .clients {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .clients-section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+
+.clients__item {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  width: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc(100%/3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc(100% / 6 - 30px);
   }
 }
 
@@ -830,6 +867,8 @@ body {
 }
 
 .clients__link {
+  width: 100%;
+  height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,15 +897,27 @@ body {
 }
 
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__logo {

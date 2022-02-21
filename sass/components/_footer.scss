@@ -5,9 +5,15 @@
     
 }
 .footer__container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    @include desk {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    }
+    
 }
 .footer__logo{
     font-family: Raleway;

@@ -1,36 +1,45 @@
-// .clients-section{
-//     @include tab {
-
-//     }
-// }
 .clients{
-    @include desk{
+    margin-bottom: -30px;
     display: flex;
-    justify-content: center;
-    }
+    flex-wrap: wrap;
+    margin-left: -30px;
     
     
 }
-// .clients__item{
-//     @include tab {
-//     width: calc(100% / 3 - 30px);
-//     margin-left: 30px;
-//   }
-//   @include desk {
-//     width: calc(100% / 4 - 30px);
-//     margin-left: 30px;
-//     &:not(:first-child){
-//     margin-left: var(--card-set-gap);
-// }
-//   }
-// }
-// .clients__item:not(:first-child){
-//     margin-left: 30px;
-// }
+.clients-section-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: var(--card-set-gap);
+    color: var(--tittle-text-color);
+    @include desk {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    }
+}
+.clients__item{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: calc(100% / 2 - 30px);
+    @include tab {
+        width: calc(100%/3 - 30px);
+    }
+    @include desk {
+    width: calc(100% / 6 - 30px);
+    }
+}
+
 .clients__icon{
     fill: currentColor;
 }
 .clients__link{
+    width: 100%;
+    height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
