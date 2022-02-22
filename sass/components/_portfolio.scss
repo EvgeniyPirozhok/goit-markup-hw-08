@@ -61,6 +61,13 @@
 
 
 .galery{
+    margin-left: -30px;
+    margin-bottom: -30px;
+    @include tab{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    }
     
     @include desk{
     padding: 0;
@@ -95,9 +102,18 @@ border-top: none;
 padding: 20px 24px;
 }
 .galery__list{
+    display: block;
+    @include tab{
+    flex-basis: calc(100%/2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    }
+    @include desk{
     flex-basis: calc(100%/3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);   
+    margin-top: var(--card-set-gap);
+    }
+       
     
 }
 
@@ -107,6 +123,7 @@ padding: 20px 24px;
     overflow: hidden;
 }
 .galery__text{
+    flex-grow: 1;
     position: absolute;
     top: 0;
     left: 0;

@@ -156,10 +156,10 @@ margin-bottom: 60px;
 .subscription__input{
     justify-content: center;
     height: 50px;
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
     @include tab{
-    max-width: 450px;
+    width: 450px;
     }
     @include desk{
     width: 358px;
