@@ -20,8 +20,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
-    min-width: 528px;
+    @include mob{
+    width: 90vw;
+    max-width: 450px;
+    }
+    @include tab {
+    width: 450px;
+    }
+    @include desk {
+    width: 528px;
+    }
     min-height: 581px;
     border-radius: 4px;
     padding: 40px;
@@ -35,6 +43,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+
+    
     
 }
 .modal-close__btn{
