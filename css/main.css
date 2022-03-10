@@ -254,6 +254,7 @@ body {
 }
 .menu-open-btn .menu-icon__close {
   display: block;
+  position: fixed;
 }
 .menu-open-btn .menu-icon__open {
   display: none;
@@ -278,7 +279,8 @@ body {
 
 .container-menu {
   display: none;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -498,13 +500,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .benefits__card {
-    width: calc(100% / 2 - 30px);
+    width: calc(50% - 30px);
     margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__card {
-    width: calc(100% / 4 - 30px);
+    width: calc(25% - 30px);
     margin-left: 30px;
   }
 }
@@ -627,13 +629,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .employee__card {
-    width: calc(100% / 2 - 30px);
+    width: calc(50% - 30px);
     margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .employee__card {
-    width: calc(100% / 4 - 30px);
+    width: calc(25% - 30px);
     margin-left: 30px;
   }
   .employee__card:not(:first-child) {
@@ -708,16 +710,16 @@ body {
 .clients__item {
   margin-bottom: 30px;
   margin-left: 30px;
-  width: calc(100% / 2 - 30px);
+  width: calc(50% - 30px);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: calc(100%/3 - 30px);
+    width: calc(33.3333333333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc(100% / 6 - 30px);
+    width: calc(16.6666666667% - 30px);
   }
 }
 
@@ -1123,14 +1125,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .galery__list {
-    flex-basis: calc(100%/2 - var(--card-set-gap));
+    flex-basis: calc(50% - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
   }
 }
 @media screen and (min-width: 1200px) {
   .galery__list {
-    flex-basis: calc(100%/3 - var(--card-set-gap));
+    flex-basis: calc(33.3333333333% - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
   }
@@ -1199,8 +1201,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 450px;
   min-height: 581px;
   border-radius: 4px;
   padding: 40px;
@@ -1212,9 +1212,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 90vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 
@@ -1335,10 +1345,15 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .check {
+    font-size: 14px;
+  }
 }
 
 .check__agreement {
