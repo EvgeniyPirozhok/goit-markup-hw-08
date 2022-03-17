@@ -30,7 +30,11 @@
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
+    
+    @include tab {
     margin-right: 93px;
+    }
+    
 }
 .header__logo-1 {
     color: var(--accent-color);
