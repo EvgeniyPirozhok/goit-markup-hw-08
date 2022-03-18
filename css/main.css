@@ -114,6 +114,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
     margin-right: 93px;
   }
 }
@@ -209,7 +214,7 @@ body {
     display: flex;
     padding-bottom: 32px;
     padding-top: 32px;
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -226,6 +231,8 @@ body {
 }
 
 .call__link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -759,20 +766,17 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  justify-content: center;
-}
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    align-items: baseline;
   }
 }
 
@@ -780,10 +784,15 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer__container-adress {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__container-adress {
+    flex-grow: 1;
     text-align: start;
-    margin-bottom: 0;
   }
 }
 
@@ -843,8 +852,12 @@ body {
 }
 
 .join {
-  margin-left: auto;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .join {
@@ -907,8 +920,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription {
+    margin-top: 0;
     margin-left: 93px;
   }
 }
@@ -1083,14 +1102,12 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.galery {
-  margin-bottom: -30px;
-}
 @media screen and (min-width: 768px) {
   .galery {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1138,6 +1155,7 @@ body {
     flex-basis: calc(50% - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

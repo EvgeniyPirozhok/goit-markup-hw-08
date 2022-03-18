@@ -32,7 +32,10 @@
     line-height: 1.19;
     
     @include tab {
-    margin-right: 93px;
+    margin-right: 88px;
+    }
+    @include desk {
+        margin-right: 93px;
     }
     
 }
@@ -119,7 +122,7 @@
     display: flex;
     padding-bottom: 32px;
     padding-top: 32px;
-    align-items: baseline;    
+    align-items: center;    
 }
 }
 .call__items:not(:last-child){
@@ -133,6 +136,8 @@
     }
 }
 .call__link{
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;

@@ -5,23 +5,26 @@
     
 }
 .footer__container{
-    justify-content: center;
+    
     @include tab{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
     }
     @include desk {
     display: flex;
-    align-items: baseline;
     }
 }
 .footer__container-adress{
 text-align: center;
 margin-bottom: 60px;
+@include tab {
+margin-bottom: 0;
+}
 @include desk {
+    flex-grow: 1;
     text-align: start;
-    margin-bottom: 0;
 }
 
 }
@@ -77,8 +80,10 @@ margin-bottom: 60px;
 }
 
 .join{
-    margin-left: auto;
     margin-bottom: 60px;
+    @include tab {
+    margin-bottom: 0;
+    }
     @include desk{
     margin-left: 70px;
     }
@@ -133,7 +138,11 @@ margin-bottom: 60px;
     
 }
 .subscription{
+    @include tab{
+    margin-top: 60px;
+    }
     @include desk{
+    margin-top: 0;
     margin-left: 93px;
     }
 
